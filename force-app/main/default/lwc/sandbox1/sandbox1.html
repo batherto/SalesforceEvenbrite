@@ -1,0 +1,22 @@
+<template>
+    <lightning-button title="Fetch Data" 
+            label="Get Data" 
+            variant="brand" 
+            onclick={handleDataFetch}></lightning-button>
+    <lightning-card title="Offsite Data Call" icon-name="custom:custom14">
+
+            <template if:true={infoData}>  
+            
+                <ul class="slds-m-around_medium">
+                    <template for:each={infoData} for:item="contact">
+                        <li key={contact.id}>
+                            {contact.username} - {contact.name} - {contact.email}
+                        </li>
+                    </template>
+                </ul>
+
+                </template>
+
+
+    </lightning-card>
+</template>
