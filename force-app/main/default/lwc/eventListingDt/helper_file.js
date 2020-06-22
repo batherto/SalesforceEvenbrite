@@ -5,7 +5,7 @@ export default async function fetcheventdata(){
     let results = [];
     // create new function to hold bulk of the work
     function fetchNextJson(url){
-            const bearer = 'Bearer RKNNF33PZANGF6SVYJMT';
+            const bearer = 'Bearer REPLACE_WITH_REAL_KEY';
             return fetch(url,{
                 // request type
                 method:'GET',
